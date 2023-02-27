@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.headermain {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 82;
+
+
+    top: 4px;
+    background: #F9F8F3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 74px;
+
+}
+h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+nav a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2D4849;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+.active{
+    color: #FDB137;
+   
+}
+.act{
+    background-color: #FDB137;    
+}
+nav a:hover {
+    color: #FDB137;
+
+}
+.navcg{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2D4849;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+header .btn {
+    width: 118px;
+    height: 47px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.025em;
+    color: #2D4849;
+    border-radius: 50px;
+    border: none;
+
+}
+
+header .btn:hover {
+    background-color: #FDB137;
+}
+
+header .buttons {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 19rem;
+  
+
+}
+.antcat{
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2D4849;
+    text-decoration: none;
+    margin: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: -1.5rem;
+}
+
+header .nav_btn {
+    
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FDB137;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.mobileicon {
+    display: none;
+}
+
+header .nav-btn {
+   
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+.btn{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+    .logo {
+        display: flex;
+        margin: 0 5rem;
+
+    }
+
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+     
+       
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .btn {
+   visibility: visible;
+    }
+ h3{
+    visibility: hidden;
+    display: none;
+ }
+
+
+
+
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #FDB137;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}

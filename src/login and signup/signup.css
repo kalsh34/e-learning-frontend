@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.contianer_signup{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 390px;
+height: 600px;
+left: 1.5rem;
+margin-left: 30rem;
+background-color: #F9F8F3;
+margin-top: 5rem;
+text-decoration: none;
+/* box-shadow: 0 0.188rem 1.550rem rgb(156, 156, 156); */
+/* border-radius: 3rem; */
+}
+
+.contianer_signup .a0{
+    width: 155px;
+height: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 74px;
+color: #2D4849;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.contianer_signup .google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    width: 360px;
+    height: 40px;
+    border-style: none;
+    background: #E6F0F0;
+    border-radius: 8px;
+}
+.contianer_signup .a1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #2D4849;
+}
+.contianer_signup .a2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 12px;
+/* identical to box height, or 109% */
+
+letter-spacing: 0.3px;
+
+/* Black-800 (#333333) */
+
+
+}
+.contianer_signup .forms .in1{
+width: 360px;
+height: 48px;
+border-radius: 10px;
+border-style:none;
+display: inline-block;
+width: 360px;
+
+}
+
+.forms{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 360px;
+height: 600px;
+}
+.buttom{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 360px;
+height: 20px;
+
+}
+.buttom .radio{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 172px;
+height: 20px;
+}
+.buttom .radio .a3{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+letter-spacing: 0.3px;
+color: #2D4849;
+
+}
+.forgot{
+    width: 172px;
+height: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+text-align: right;
+letter-spacing: 0.3px;
+text-decoration-line: none;
+color: #FDB137;
+
+}
+.btn44{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    
+    width: 360px;
+    height: 40px;
+    
+    /* Primary/primary */
+    
+    background: #FDB137;
+    border-radius: 6px;
+    border-style: none;
+
+/* Button-label */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.3px;
+
+/* White (#FFFFFF) */
+
+color: #FFFFFF;
+margin-top: 1rem;
+}
+
+.sign_uplink{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 235px;
+    height: 20px;
+    top: 450.5px;
+}
+.sign_uplink p{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+letter-spacing: 0.3px;
+
+}
+.sign_uplink .scolor{
+    color: #FDB137;
+    text-decoration: none;
+}
+
+/* .btn46{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 360px;
+    height: 40px;
+    
+    
+    
+    background: #FDB137;
+    border-radius: 6px;
+    border-style: none;
+
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.3px;
+
+
+color: #FFFFFF;
+margin-top: -6rem;
+text-decoration: none;
+ } */
+@media only screen and (max-width:1024px) {
+
+    .contianer_signup{
+        margin-left: -0.8rem;
+        margin-top: 10rem;
+    } 
+}
+
+
+.btn46{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 360px;
+    height: 40px; 
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px; 
+color: #FFFFFF;
+margin-top: -6rem;
+
+background: #FDB137;
+    border-radius: 6px;
+    border-style: none;
+}
+.underlinehide{
+    text-decoration: none;
+}
+

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+.hehe {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 42px;
+margin-left: 2rem;
+margin-top: 4rem;
+display: flex;
+align-items: center;
+color: #000000;    
+}
+
+.our{
+color: #010808;
+margin-top: 3rem;
+margin-right: 15rem;
+text-align: center;
+font-size: 40px;
+}
+
+.bdo{
+color: #FDB137;
+}
+
+.vvbtn1 {  
+background: #FDB137;
+box-shadow: 0px 4.73471px 9.46943px rgba(0, 0, 0, 0.15);
+border-radius: 37.8777px;
+border: none; 
+margin-left: -3rem;
+margin-top: 3rem;
+width: 14rem;
+height: 3rem; 
+}
+
+.vvbtn1 p {
+  color: white; 
+  margin-left: -1rem;
+  font-size: 1.15rem;
+  margin-top: -1.2rem;
+}
+
+.buttonAB {
+margin-top: -2.5rem;
+margin-left: 9.3rem; 
+}
+
+  
+
+

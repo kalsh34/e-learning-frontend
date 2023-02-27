@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.header1 {
+    /* Find the right Online Course for you */
+width: 100%;
+height: 69px;
+margin-left: -10px;
+margin-bottom: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #2D4849;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 50rem;
+
+}
+
+.head {
+    width: 896px;
+    height: 69px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    
+    
+    color: #2D4849;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+  
+
+.nav__list {
+        
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin-left: 73px;
+    gap: 40px;
+    line-height: 12;
+    font-weight: normal;
+    
+    position: absolute;
+    width: 1303px;
+    height: 30px;
+    left: 12px;
+    top: 0px;
+
+    list-style: none;
+    column-gap: 3rem;
+}
+
+ .an {
+    font-weight: 500;
+    font-size: 21px;
+    margin-top: 30px;
+    color: #2D4849;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    line-height: 300px;
+
+
+    
+}
+
+ .an:hover {
+    color: #FDB137;
+  }
+
+  .mobile__menu span i {
+    font-size: 1.4rem;
+    color: #0a2b1e;
+    cursor: pointer;
+  }
+  
+  .mobile__menu {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .header1 {
+      margin-left: -13rem;
+      width: 100%;
+      height: 69px;
+    }
+
+    .card{
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    .head {
+        font-size: 2rem;
+        margin-top: 15px;
+        margin-left: 9rem;
+        
+    }
+
+    .line{
+        display: none;
+    }
+
+ .nav__menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0a2b1ec2;
+      z-index: 99;
+      display: none;
+      
+   }
+  
+    .nav__list {
+      position: absolute;
+      background: #fff;
+      top: 0;
+      left: 450px;
+      width: 250px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999;
+      padding-top: 80px;
+    }
+
+    .an{
+        margin-top: 9px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 21px;
+        color: #2D4849;
+        text-decoration: none;
+        transition: 0.3s;
+        display: flex;
+        line-height: 30px;
+    }
+  
+    .mobile__menu {
+      display: block;
+      /* margin-left: 700px;
+      margin-top: -300px; */
+    }
+  
+  
+  .active__menu {
+    display: block;
+  }
+  
+  }
+  
+

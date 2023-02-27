@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.helina{
+margin-top:-2rem;
+}
+.helina_text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+color: #2D4849;
+margin-left: 2rem;
+display: flex;
+margin-top: 25rem;
+
+}
+.helina_container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    position: absolute;
+    width: 10%;
+    height: 30px;
+    left: 12px;
+    top: 0px;
+}
+.helina_nav a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;  
+    color: #2D4849;
+    text-decoration: none;
+}
+.helina_nav a:hover{
+    color: orange;
+  
+}
+.helina_nav .nav-close-btn {
+    display: none;
+}
+.helina_nav .nav-btn {
+    display: none;
+
+}
+
+
+
+@media only screen and (max-width:1024px) {
+    .helina {
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        margin-top: -64rem;
+        
+        
+    }
+    .helina_text{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #2D4849;
+    margin-left: 2rem;
+    display: flex;
+    margin-top: 40rem;
+    
+    }
+    .helina_nav {
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #FDB137;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+ .responsive_helina {
+        transform: none;
+    }
+    .helina_nav{
+      font-size: 1.5rem;
+    }
+    .helina_nav .nav-btn {
+        display: block; 
+        position: absolute;
+        top: 2rem;
+       
+    }
+    .helina_nav .nav-close-btn {
+      display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    .helina_nav :visited{
+        color: #FDB137;
+    }
+}

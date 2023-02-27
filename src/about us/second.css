@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Poppins&family=Roboto:wght@700&display=swap');
+
+.image3123{
+    
+    width: 431px;
+    height: 477px;
+    left: -4px;
+    top: calc(50% - 477px/2 - 38px);
+
+}
+.paragraph123{
+    width: 747px;
+height: 136px;
+
+/* Text md / Regular */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+
+color: #53545B;
+}
+.con6123{
+    display: flex;
+   
+   justify-content: center;
+    flex-direction: row;
+}
+.con8123{
+    margin-left: 35rem;
+    margin-top: -30rem;
+}
+.connection1 h1{
+    width: 573px;
+height: 60px;
+
+/* Display lg / Semibold */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+/* Primary/primary 2 */
+
+color: #2D4849;
+}
+.connection1 h2{
+    width: 759px;
+height: 116px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 18px;
+/* or 73% */
+
+display: flex;
+align-items: center;
+
+/* Primary/primary 2 */
+
+color: #2D4849;
+
+
+}
+.connection1 button{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 30px;
+gap: 10px;
+
+width: 161px;
+height: 49px;
+
+/* Primary/primary */
+ border: none;
+background: #FDB137;
+border-radius: 4px;
+ 
+
+
+}
+.start123{
+    width: 101px;
+height: 29px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 44px;
+/* or 275% */
+
+display: flex;
+align-items: center;
+text-transform: lowercase;
+
+/* secondary/UI color 2 */
+
+color: #F9F8F3;
+} 
+.proud123{
+    margin-left: 35rem;
+    margin-top: 7rem;
+}.prouds123{
+    margin-left: 29rem;
+}
+.brightfe{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left: -17rem;
+    margin-bottom: 2rem;
+    align-items:center;
+    
+width: 759px;
+height: 116px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 18px;
+}
+.inform123{
+    
+        display: flex;
+        gap: 25rem;
+        margin-left: 10rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+}
+.con11123{
+    width: 100%;
+    height: 651px;
+    display: flex;
+/* secondary/UI color 3 */
+
+background: #E6F0F0;
+}
+.con12123{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 670px;
+    height: 369px;
+    
+}
+.con13123{
+    position: absolute;
+width: 450.82px;
+height: 568.72px;
+
+top: calc(50% - 568.72px/2 - 22.61px);
+margin-top: 52rem;
+margin-left: 55rem;
+}
+.p4123{
+width: 126px;
+height: 26px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height, or 144% */
+
+display: flex;
+align-items: center;
+
+/* Primary/primary 2 */
+
+color: #2D4849;
+}
+.p5123{
+    width: 670px;
+    height: 161px;
+
+/* Text lg / Regular */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+display: flex;
+align-items: center;
+
+color: #53545B;
+}
+.h8123t{
+    margin-top: -6rem;
+    margin-bottom:-4.3rem;
+    font-family: 'Inter';
+    color: red;
+    font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+
+}
+.h4123{
+    font-family: 'Inter';
+    margin-top: -1.3rem;
+    margin-bottom: 1rem;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+}
+.connection1
+{
+    margin-top: 35rem;
+}
+.img3123{
+     margin-top: 38rem; 
+     margin-left: -7rem;
+    /* position:absolute; */
+}
+.ab{
+    font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+}
+.abs{
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 29rem;
+}

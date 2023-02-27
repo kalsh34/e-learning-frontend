@@ -1,0 +1,181 @@
+.card-container{
+   
+   height: 250px;
+   padding: 50px;
+    align-items: center;
+
+
+    background-color: #E6F0F0;
+  
+
+}
+bdo{
+    color: #FDB137;
+    
+}
+.bdoimg{
+    margin-left: 5rem;
+    color: blue;
+    align-items: center;
+   
+}
+.belofi{
+    color: #2D4849;
+    margin-left: 1rem;
+    padding: -8rem;
+}
+.belowimg{
+    color: #52565B;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+.in{
+    margin-left: 5rem;
+}
+.let{
+    background-color: #E6F0F0;
+    height: 25rem;
+    width: 22rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+     
+}
+.txtimg{
+  margin-top: -5rem;  
+  padding: 1.5rem;
+  margin-right: 25rem;
+  color: white;
+
+
+  
+}
+.txt{
+    margin-right: 13.5rem;
+    color: #2D4849;
+    font-size: 15px;
+    line-height: 38px;
+    margin-top: -1rem;
+    font-weight: 500px;
+}
+.btn{
+    background-color: #FDB137;
+    border-radius: 0rem;
+ margin-top: 2rem;
+ color: white;
+ border-radius: 6px;
+ width: 7rem;
+height: 2rem;
+border: 1px solid rgba(48, 146, 85, 0.2);
+
+}
+
+.imgsize{
+    padding: 1rem;
+    width:  38rem;
+    height: 15rem;
+    border-radius: 1rem;
+    
+}
+.card-wir{
+    margin-top: 80px;
+}
+
+.text{
+text-align: left;
+color: #2D4849;
+padding: 3rem;
+margin-left: 4rem;
+
+width: 15rem;
+margin-top: -10rem;
+
+}
+.text2{
+    text-align: left;
+    margin-top: 4rem;
+    color: #2D4849;
+    font-size: 30px;
+    margin-left: 8rem;
+font-family:  'Arial Narrow Bold', sans-serif;
+
+width: 15rem;
+
+}
+.contain-instruct{
+    background-color: #E6F0F0;
+    width: 35rem;
+  margin-top: -4rem;
+    padding-top: -10rem;
+    margin-left: 4rem;
+    height: 3rem;
+  
+    border-radius: 10px;
+}
+.btnin{
+    align-items: center;
+    margin-left: 4rem;
+    background-color: #FDB137;
+   margin-top: 12px;
+   border: 1px solid rgba(48, 146, 85, 0.2);
+   border-radius: 5px;
+   width: 100px;
+height: 30px;
+}
+.btnin:hover{
+    background-color: #FDB137;
+
+}
+.header{
+    margin-left: -4rem;
+    font-size: 15px;
+    line-break: normal;
+    background-color: white;
+    text-align: left;
+   
+}
+.h{
+    padding-right: 30rem;
+}
+
+.im{
+margin-left: 40rem;
+    border-radius: 100%;
+    background-color: #FDB137;
+       width: 10rem;
+   
+  
+
+  
+  
+}
+.imo{
+    margin-left: 50rem;
+border-radius: 100%;
+ background-color: #FDB137;
+    width: 11rem;
+    
+}
+
+
+.im2{
+   margin-left: 40rem;
+    width: 6rem;
+    height: 5rem;
+    margin-top: -4rem;
+    border-radius: 5rem;
+    background: #FDB137;
+    border-radius: 70%;
+}
+@media (max-width: 340px) {
+    .im2.imo.header{
+        width: 300px;
+    }
+    .contain-instruct{
+        width: 300px;
+    }
+    .card-container{
+        width: 300px;
+
+    }
+
+}

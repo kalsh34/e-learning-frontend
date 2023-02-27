@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.fcontainer{
+    position: absolute;
+width: 100%;
+height: 380px;
+left: 0px;
+top: 184rem;
+background: #2D4849;
+margin-top: -88rem;
+}
+.fotter_all{
+display: flex;
+justify-content: space-evenly;
+margin-top: 2rem;
+}
+
+.fotter1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F9F8F3;
+    margin-top: -1rem;
+}
+
+.fotter2 h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height, or 138% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #FEEAA5;
+}
+.fotter3 h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height, or 138% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #FEEAA5;
+}
+.fotter4 h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 18px;
+    /* identical to box height, or 56% */
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    /* secondary/UI color 1 */
+    
+    color: #FEEAA5;
+}
+.fotter4 .feild{
+    position: absolute;
+    width: 270px;
+height: 55px;
+margin-left: -8rem;
+top: 100px;
+border-radius: 80px;
+}
+.fotter4 button{
+    position: absolute;
+width: 280px;
+height: 55px;
+background: #FDB137;
+border-radius: 50px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+top: 200px;
+margin-left: -8rem;
+}
+.fotter_all p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #F9F8F3;
+}
+.fotter2{
+    margin-top: 3rem;
+}
+.fotter3{
+    margin-top: 3rem;
+}
+@media only screen and (max-width:1024px) {
+    .fotter_all{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        }
+        .fcontainer{
+            position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 325rem;
+        background: #2D4849;
+        }  
+        .fotter4 .feild{
+            position: absolute;
+        width: 354.51px;
+        height: 55px;
+        
+        top: 36rem;
+        border-radius: 80px;
+        }
+        .fotter4 button{
+            position: absolute;
+        width: 354.51px;
+        height: 55px;
+        background: #FDB137;
+        border-radius: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        top: 40rem;
+        }
+    }
+    .hr {
+        border-color: #FDB137;
+      }

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.title123{
+    
+    align-items: center;
+    margin-left: 42rem;
+}
+.list123{
+   width: 1000px;
+   height: 300px;
+   display: flex;
+  margin-left: 20rem;
+   flex-wrap: wrap;
+   gap: 3rem;
+
+}
+.pptm{
+    margin-left: 3rem;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-bottom: 2.5rem;
+margin-top: 3rem;
+}
+.h22{
+    margin-top: -2rem;
+    margin-left: -2.5rem;
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 49px;
+margin-bottom: 3rem;
+}
+.frame123{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: -8rem;
+   
+}
+.p44{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 8px;
+    line-height: 8px;
+    margin-left: 4rem;
+    margin-bottom: -2rem;
+    margin-top: 10px;;
+}
+.p66{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 15px;
+margin-left: 3rem;
+margin-top: 0.8rem;
+}
+/* .card{
+    width: rem;
+    height: 10rem;
+} */
+.ak{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+}

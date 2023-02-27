@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.card{
+    box-sizing: border-box;
+
+    position:relative;
+    width:15rem;
+    height:18rem;
+    left: px;
+    
+    
+    /* Primary/primary 2 */
+    
+    border: 0.5px solid #d8d8d8;
+    border-radius: 20px;
+
+}
+.card_container{
+    display: flex;
+    
+    width: 100%;
+    height: 756px;
+   gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+
+}
+.ac{
+    display: flex;
+    width: 100%;
+    height: 970px;
+   gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;   
+}
+
+
+.imgh{
+    position: absolute;
+width: 14rem;
+height: 10rem ;
+left: 7px;
+top: 13px;
+border-radius: 10px;
+
+}
+.card_text p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.02em;
+
+/* Primary/primary 2 */
+display: flex;
+color: #2D4849;
+position:absolute;
+margin-top: 10rem;
+padding: 1rem;
+opacity: 0.8;
+}
+.card_text{
+position:absolute;
+}
+.card_text .inst{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+
+/* Primary/primary 2 */
+margin-top: 10rem;
+color: #2D4849;
+}
+.card_text .inst1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+width: 10rem;
+font-size: 14px;
+line-height: 13px;
+margin-top: 12rem;
+color: #2D4849;
+}
+@media only screen and (max-width:1024px) {
+    .card{
+        box-sizing: border-box;
+    
+        position:relative;
+        width:10rem;
+        height:10rem;
+        left: px;
+        top: 2rem;
+        
+        /* Primary/primary 2 */
+        
+        border: 0.5px solid #ada6a6;
+        border-radius: 20px;
+    }
+    .imgh{
+        position: absolute;
+    width: 8.6rem;
+    height: 5rem ;
+    left: 9px;
+    top: 13px;
+    border-radius: 10px;
+    
+    }
+    .card_text p{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    
+    /* Primary/primary 2 */
+    display: flex;
+    color: #2D4849;
+    position:absolute;
+    margin-top: 5rem;
+    padding: 1rem;
+    opacity: 0.8;
+    }
+    .card_text .inst{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    letter-spacing: -0.02em;
+    
+    /* Primary/primary 2 */
+    margin-top: 7rem;
+    color: #2D4849;
+    }
+}

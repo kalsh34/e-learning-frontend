@@ -1,0 +1,64 @@
+.All_navs {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 1px;
+padding: 40px 16px;
+width: 80rem;
+height: 1rem;
+background: #E6F0F0;
+border-radius: 9px;
+margin-left: 1.7rem;
+margin-top: 2rem;
+}
+
+.navacn button {
+box-sizing: border-box;
+width: 9rem;
+height: 3rem;
+background: #FFFFFF;
+border: 1px solid #E6F0F0;
+border-radius: 10px;
+margin-left: 3.5rem;
+}
+
+.navacn .acn {    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 2rem;
+display: flex;
+margin-left: 1.5rem;
+color: #2D4849;
+text-decoration: none;
+}
+
+.navacn button:hover {
+    background-color: #FDB137;
+}
+
+
+
+.arrow_btn1 {
+position: absolute;
+width: 2rem;
+height: 2rem;
+left: -1rem;
+top: 7.2rem;
+background: #FFFFFF;
+box-shadow: 0px 0px 20px rgba(48, 146, 85, 0.05);
+border-radius: 20px;
+}
+
+.arrow_btn2 {
+position: absolute;
+width: 2rem;
+height: 2rem;
+right: 7rem;
+top: 7rem;
+background: #FFFFFF;
+box-shadow: 0px 0px 20px rgba(48, 146, 85, 0.05);
+border-radius: 20px;
+}

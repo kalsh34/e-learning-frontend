@@ -1,0 +1,177 @@
+.nav{
+   
+    height: 550px;
+    padding: 50px;
+    align-items: center;
+    background-color: #E6F0F0;
+}
+.conthome{
+    
+width: 48px;
+height: 26px;
+color: black;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+}
+
+.home{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 364.781px 0.5px 0px;
+gap: 12.22px;
+
+position: absolute;
+width: 534px;
+height: 26.5px;
+left: 171px;
+top: 308.75px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+
+/* Primary/primary 2 */
+
+color: #2D4849;
+margin-left: 8rem;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 364.781px 0.5px 0px;
+    gap: 12.22px;
+    
+    position: absolute;
+    width: 534px;
+    height: 26.5px;
+    left: 191px;
+    top: 308.75px;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+width: 70%;
+height: 50%;
+top: 645px;
+margin-left: 10rem;
+margin-right: auto;
+}
+
+
+.beg{
+    position: absolute;
+left: 907.19px;
+right: 437.81px;
+top: 258.5px;
+bottom: 118.5px;
+}
+.contact-us2{
+    margin-top: 20rem;
+    margin-left: 15rem;
+
+}
+.bdo{
+    margin-left: 0.5rem;
+    color: #FDB137;
+}
+.teacher{
+    position: absolute;
+width: 204px;
+height: 204px;
+left: 1151px;
+top: 247px;
+
+}
+
+.left{
+    border: 1px outset red;
+  
+    background: #E6F0F0;
+    border: 1px outset red;
+   
+    background: #E6F0F0;
+    
+
+margin-top: 85rem;
+margin-left: 2rem;
+margin-bottom: 40rem;
+flex-flow: row;
+flex-direction: column;
+align-items: flex-start;
+padding: 70px 60px;
+
+position: absolute;
+width: 562px;
+height: 350px;
+left: 15px;
+top: 50px;
+}
+.right{
+    border: 1px outset red;
+  
+
+    background: #E6F0F0;
+    
+
+
+margin-top: 85rem;
+margin-left: 40rem;
+margin-bottom: 40rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 70px 60px;
+
+position: absolute;
+width: 562px;
+height: 350px;
+left: 15px;
+top: 50px;
+
+}
+
+.calls{
+  margin-left: 4rem;
+  margin-top: -36px;
+    color: #FDB137;
+    
+}
+.ico{
+    
+    font-size: 2rem;
+}
+.callss{
+    margin-left: 4rem;
+   margin-top: -34px;
+      color: #FDB137;
+       }
+.callsss{
+    margin-left: 4rem;
+   margin-top: -40px;
+      color: #FDB137;
+       }
+  .icos{
+      margin-top: 30px;
+      font-size: 2rem;
+  }
+  .icoss{
+      margin-top: 90px;
+      font-size: 2rem;
+  }
+.input{
+    border-radius: 25px;
+}
+

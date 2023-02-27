@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.Sheader {
+margin-top: -48rem;
+}
+
+.Shead {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+color: #2D4849; 
+margin-left: 3rem;
+margin-top: -3rem;
+}
+
+.vvbtn2 {  
+background: #FDB137;
+box-shadow: 0px 4.73471px 9.46943px rgba(0, 0, 0, 0.15);
+border-radius: 37.8777px;
+border: none;
+margin-left: 75rem;
+margin-top: 5rem;
+width: 7.5rem;
+height: 3rem;
+}
+
+.vvbtn2 p {
+color: white; 
+margin-left: -1rem;
+font-size: 1.3rem;
+margin-top: -1.3rem;
+}
+
+.buttonABC {
+margin-top: -2.3rem;
+margin-left: 81rem; 
+}
+
+
+
+
+

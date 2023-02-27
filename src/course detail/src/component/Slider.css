@@ -1,0 +1,83 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width:100%;
+  height: 230px;
+  margin-top: 1rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(212, 206, 206);
+  border: 2px solid black;
+  width: 10px;
+  border-radius: 1rem;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 78%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.swiper-slide img:hover{
+	transform: scale(1.06);
+	transition: ease-in-out all .2s;}
+
+.swiper-slide .title {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .swiper-slide .subtitle {
+    font-size: 15px;
+  }
+  
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+    float:right;
+    margin-top: 70px;
+    margin-left: -100px;
+  }
+  .our{
+    color: #2D4849;
+    margin-top: 25rem;
+    margin-right: 48rem;
+  }
+  .txtimg{
+    color: #FDB137;
+  }
+  

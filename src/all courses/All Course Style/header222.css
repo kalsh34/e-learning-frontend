@@ -1,0 +1,32 @@
+.hulu {
+    margin-top: 5rem;
+}
+
+.h {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    color: #2D4849;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    }
+    
+    .org {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 3rem;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    color: #FDB137;
+    margin-top: -4rem;
+    margin-left: 6rem;
+    }
+    .All-heli{
+        margin-top: 8rem;
+    }
