@@ -1,12 +1,18 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import{Route,Routes,BrowserRouter}from'react-router-dom';
+import { Link } from 'react-router-dom';
+import All_course_container from '../../all courses/All Courses/All_course_container';
 const Aheader = () => {
+  const navigate=useNavigate()
+  // const allcourse=()=>{
+  //   navigate('allcourses')
+  // }
   return (
+    
     <div className='Alo'>
 
-      <button className='vvbtn'>
-        <p>View All</p>
-      </button>
+     
       <div className='buttonA'>
         {/* arrow */}
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -15,7 +21,9 @@ const Aheader = () => {
       </div>
 
       <h1 className='Aheader'>Recommended for you</h1>
+ 
     </div>
+   
   )
 }
 

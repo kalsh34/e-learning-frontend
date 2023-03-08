@@ -35,6 +35,8 @@ import { FcFilledFilter } from "react-icons/fc";
 const data = [
     {
       avatar:<Avatar>y</Avatar>,
+      
+      
       title: 'yohannes',
       description:'@username',
       

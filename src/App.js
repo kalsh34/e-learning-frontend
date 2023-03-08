@@ -52,6 +52,7 @@ import { useEffect } from 'react';
 import ManageStudent from './coo/common/ManageStudent';
 import Setting from './coo/common/Setting';
 import { useWorkoutContext } from './hooks/useworkoutcontext';
+import Test from './Helina/test';
 function App() {
   const navigate=useNavigate()
   const{state,dipatch}=useWorkoutContext()
@@ -108,8 +109,8 @@ const [dada, setdada] = useState(didi[0]);
 <Route path='/home2' element={<Appo/>}></Route>
 <Route path='/contact' element={<AppContact/>}></Route>
 <Route path='/courses' element={<Courses/>}></Route>
-
-<Route path='/page' element={<Page current={current} setcurrent={setcurrent}  dada={dada}  setdada={setdada} didi={didi}/>}></Route>
+<Route path='/test/:id' element={<Test/>}></Route>
+<Route path='/page/:id' element={<Page current={current} setcurrent={setcurrent}  dada={dada}  setdada={setdada} didi={didi}/>}></Route>
 </Routes>
  
 

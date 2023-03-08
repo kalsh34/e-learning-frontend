@@ -16,70 +16,26 @@ import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons
 
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import axios from 'axios';
+import { useState,useEffect } from 'react';
+SwiperCore.use([
+    Navigation, Pagination, Scrollbar, A11y]);
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const data = [
-    {
-        id: 1,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 2,
-        Image: Imgg,
-        //Video: Video,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 3,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 4,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 4,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 4,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-    {
-        id: 4,
-        Image: Imgg,
-        title: 'lorem ipsum',
-        description: '09.Lorem ipsum dolor sit amet consectetur.',
-        time: '24h 36m left',
-        instructor: 'lorem ipsum',
-    },
-]
+
 
 const Card = () => {
+    const [course, setcourse] = useState([]);
+    useEffect(() => {
+    async  function fetchdata() {
+        const response=await axios.get('/courses')
+        const course=response.data
+        console.log(course)
+        setcourse(course)
+        
+      }fetchdata()
+
+    }, []);
     return (
 
         <div className='Appl'>
@@ -101,17 +57,17 @@ const Card = () => {
 
 
 
-                {data.map(user => (
+                {course.map(user => (
                     <SwiperSlide key={user.id} className="slide">
                         <div className='slide_content'>
                             <div className='image'>
-                                <img src={user.Image} alt='' className='photo' />
+                                <img src={user.image} alt='' className='photo' />
                             </div>
 
-                            <h1 className='title'>{user.title}</h1>
-                            <h1 className='desc'>{user.description}</h1>
-                            <h1 className='timee'>{user.time}</h1>
-                            <h1 className='instructor'>{user.instructor}</h1>
+                            <h1 className='title'>{user.courseName}</h1>
+                            <h1 className='desc'>{user.description.slice(0,40)}</h1>
+                            <h1 className='seat'>{user.category?.name}</h1>
+                            <h1 className='instructor'>{user.instractor?.firstName}</h1>
 
                             <div className='svg'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange" class="bi bi-play-circle-fill" viewBox="0 0 16 16">

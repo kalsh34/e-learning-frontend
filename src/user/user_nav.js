@@ -1,7 +1,7 @@
 import LOGO from'./logo container.png';
 import{BiCategory} from'react-icons/bi';
 import{BsBell} from'react-icons/bs';
-import Profile from'./profile.jpg';
+import Profile from'./profile.png';
 import'./nav.css';
 const User_nav = () => {
     return ( 

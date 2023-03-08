@@ -1,6 +1,7 @@
-const Videos = ({dada,current,select}) => {
+const Videos = ({dada,current,select,card}) => {
+    console.log("keyua wef",dada)
     return ( 
-        <video src={dada.v1} className='video' controls poster={current.Image}></video>
+        <video src={dada.v1} className='video' controls poster={current.image}></video>
      );
 }
  

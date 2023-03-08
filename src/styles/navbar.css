@@ -9,7 +9,7 @@
 
 .headermain {
     width: 100%;
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -141,6 +141,38 @@ header .nav-btn {
 .btn{
     cursor: pointer;
 }
+.btn41{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 20px;
+    
+    /* Primary/primary */
+    
+    background: #ff2600;
+    border-radius: 6px;
+    border-style: none;
+
+/* Button-label */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+
+
+/* White (#FFFFFF) */
+
+color: #FFFFFF;
+margin-left: 7rem; 
+margin-top: -2rem;
+}
+.avatar{
+    /* margin-top: 1rem; */
+}
 
 @media only screen and (max-width:1024px) {
     .logo {
@@ -155,6 +187,17 @@ header .nav-btn {
      
        
     }
+    
+.dropdown-content {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+    padding: 8px 0;
+    border: 1px solid #ddd;
+  }
 
     header {
         display: flex;

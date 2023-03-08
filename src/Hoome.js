@@ -21,10 +21,16 @@ import'./Beka/beka_data.css';
 import Beka_conatiner from './Beka/beka_container';
 import Appp from './dave/src/App';
 import Fotter_Container from './Footer/fotter _container';
-
+import { useEffect } from 'react';
 import { Route, Routes}from'react-router-dom';
+import axios from 'axios';
 
 const Homee = ({acounting,card1,setcurrent}) => {
+    useEffect(() => {
+        (async()=>{
+            await axios.get("/auth/logout")
+        })()
+    }, []);
     const [info, setinfo] = useState(data());
  
     return ( 

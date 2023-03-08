@@ -1,9 +1,24 @@
+import axios from 'axios';
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const HEADER = () => {
+  const [user, setUser] = useState([]);
+    useEffect(() => {
+    async  function fetchdata() {
+        const response=await axios.get('/users/showCurrentUser')
+        const course=response.data
+        console.log(course)
+        setUser(course.user)
+        
+      }fetchdata()
+
+    }, []);
   return (
     <div className='hehe'>
-      <h1 className="our">Welcome back <bdo className="bdo">Brex,</bdo> ready or your next lesson? </h1>
+      <h1 className="our" key={user.userId}
+      >Welcome back <bdo className="bdo">{user.firstName},</bdo> ready or your next lesson? </h1>
 
     <div className='VVAll'>
       <button className='vvbtn1'>

@@ -17,9 +17,16 @@ import { useEffect } from "react";
 import { useWorkoutContext } from "../hooks/useworkoutcontext";
 import { WorkoutContext } from "../context/workoutcontext";
 import{BsBell} from'react-icons/bs';
-import Profile from'../user/profile.jpg';
+import Profile from'../user/profile.png';
 import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate=useNavigate()
+const logout=()=>{
+  localStorage.setItem("isLogedIn","false")
+  navigate('/')
+ 
+}
 const {state,dispatch}=useWorkoutContext()
 // const localStorages=Cookies.get('user');
 const list=()=>{
@@ -42,8 +49,9 @@ if(isLogedIn){
 </nav> ,
     <div className="">
                 
-               <BsBell/>
+            
                 <img src={Profile} alt="Avatar" className='avatar' />
+                <button   className='btn41' type="" onClick={logout}>Logout</button>
               </div>
                
   ]
