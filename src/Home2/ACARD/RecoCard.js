@@ -20,6 +20,15 @@ SwiperCore.use([ Navigation, Pagination, Scrollbar, A11y ]);
 
 const AntiCard = () => {
 
+const navigate=useNavigate()
+  const handleclick=async(id)=>{
+    try{
+      const response= await axios.get(`courses/${id}`)
+      navigate(`/page/${id}`)
+    }catch(error){
+      console.log(error)
+    }
+  }
     const [course, setcourse] = useState([]);
     useEffect(() => {
     async  function fetchdata() {
@@ -47,7 +56,7 @@ const AntiCard = () => {
 
         {course.map( imou => (
         <SwiperSlide className='AntiSlide'>
-        <div className='Anti_content'>
+        <div className='Anti_content'onClick={()=>handleclick(imou._id)}>
             <div className='AntiImg'>
                 <img src={imou.image}  alt='' className='Imini'/>
             </div>

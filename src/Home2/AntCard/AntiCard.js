@@ -17,6 +17,7 @@ import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 SwiperCore.use([
     Navigation, Pagination, Scrollbar, A11y]);
@@ -25,6 +26,15 @@ SwiperCore.use([
 
 
 const Card = () => {
+    const navigate=useNavigate()
+  const handleclick=async(id)=>{
+    try{
+      const response= await axios.get(`courses/${id}`)
+      navigate(`/page/${id}`)
+    }catch(error){
+      console.log(error)
+    }
+  }
     const [course, setcourse] = useState([]);
     useEffect(() => {
     async  function fetchdata() {
@@ -59,7 +69,7 @@ const Card = () => {
 
                 {course.map(user => (
                     <SwiperSlide key={user.id} className="slide">
-                        <div className='slide_content'>
+                        <div className='slide_content' onClick={()=>handleclick(user._id)}>
                             <div className='image'>
                                 <img src={user.image} alt='' className='photo' />
                             </div>

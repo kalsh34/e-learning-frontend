@@ -13,6 +13,8 @@ import'../All Course Style/All_con.css';
 import'../All Course Style/All_course_header.css';
 // import'../All Course Style/SearchBox.css';
 import'../All Course Style/header222.css';
+import Fotter_Container from '../../Footer/fotter _container';
+
 const All_course_container = () => {
   
   return (
@@ -21,8 +23,9 @@ const All_course_container = () => {
         {/* <CourseContainer/> */}
         {/* <Navbar/> */}
         <All_course_nav/>
-        <All_course_header/>
+        
         <All_con/>
+        <Fotter_Container/>
        
     </div>
   )
