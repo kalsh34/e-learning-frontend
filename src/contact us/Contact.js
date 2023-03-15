@@ -4,6 +4,8 @@ import teacher from './Svg/teacher.svg';
 import {BsTelephone} from 'react-icons/bs';
 import {MdOutlineEmail} from 'react-icons/md';
 import {GrLocation} from 'react-icons/gr';
+import Fotter_Container from '../Footer/fotter _container';
+
 
 const Contact = () => {
     return(
@@ -54,7 +56,9 @@ const Contact = () => {
 
                 
             </div>
-            
+            <div className="fottcut123">
+            < Fotter_Container />
+            </div>
         </div>
       
         

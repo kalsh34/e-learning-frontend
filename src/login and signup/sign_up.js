@@ -2,56 +2,55 @@
 import'./signup.css';
 import{useFormik} from'formik';
 import * as Yup from"yup";
- 
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const Sign_up = () => {
-   
-  const formik=useFormik({
-    initialValues:{
-      Firstname:"",
-      Lastname:"",
-      email:"",
-      phonenumber:"",
-      password:"",
-    } ,
-
-    validationSchema:Yup.object({
-Firstname:Yup.string().max(20,'name must be 20 Character or less').required('First name is required'),
-Lasttname:Yup.string().max(20,'name must be 20 Character or less').required('Last name is required'),
-
-email:Yup.string().email('Invalid Email').required('required'),
-phonenumber:Yup.number().required('required'),
-// password:Yup.required('required'),
-
-    }),
-    onsubmit:(values)=>{
-console.log(values)
-    },
-  });
+  const navigate=useNavigate()
+   const [firstName, setfirstname] = useState("");
+   const [lastName, setlastname] = useState("");
+   const [email, setemail] = useState("");
+   const [phoneNumber, setphonenumber] = useState("");
+   const [password, setpassword] = useState("");
+const [error, seterror] = useState(null);
+   const post =async(e)=>{
+  e.preventDefault()
+  const signup={firstName,lastName,email,phoneNumber,password}
+  const response=await fetch('/auth/register',{
+    method:"Post",
+    body:JSON.stringify(signup),
+    headers:{
+   'Content-Type':'application/json'
+    }
+  })
+  const json=await response.json()
+  if(!response.ok){
+    seterror(json.error)
+  }
+  if(response.ok){
+    navigate('/sign_in')
+    alert('succesfull')
+  
+  }
+   }
+ 
     return ( 
         <div className="contianer_signup">
           <h1 className='a0'>Sign Up</h1>
           <p className='a1'>Get started with your Google Account.</p>
 
 
-          <div className="forms">
-            <form onsubmit={formik.handleSubmit} action="" >
-            <label className={`a2 ${formik.errors.name?"text-red-400":""}`}>{formik.touched.name && formik.errors.name?formik.errors.name:"Firstname"}</label>
-            <input className='in1' type="text" name="Firstname" id="" placeholder='FirstName'  value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
-
-            <label className={`a2 ${formik.errors.name?"text-red-400":""}`}>{formik.touched.name && formik.errors.name?formik.errors.name:"Lastname"}</label>
-            <input className='in1' type="text" name="Lastname" id="" placeholder='LastName'  value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
-
-
-            <label className='a2'>{formik.touched.email && formik.errors.email?formik.errors.email:"Email"}</label>
-            <input className='in1' type="Email" name="email" id="" placeholder='Email' value={formik.values.email}  onChange={formik.handleChange}  onBlur={formik.handleBlur} />
-
-
-             <label className='a2'>{formik.touched.phonenumber && formik.errors.phonenumber?formik.errors.phonenumber:"phonenumber"}</label>
-             <input className='in1' type="text" name="phonenumber" id="" placeholder='phonenumber' value={formik.values.phonenumber} onChange={formik.handleChange}/>
-             
-             
-             <label className='a2'>{formik.touched.password && formik.errors.password?formik.errors.password:"password"}</label>
-             <input className='in1' type="Password" name="" id="" placeholder='Password' value={formik.errors.password} onChange={formik.handleChange} />
+          <div className="forms" onSubmit={post}>
+            <form  action="" >
+              <label htmlFor="" className='a2'>FirstName</label>
+              <input className='in1' type="text" name="" id="" onChange={(e)=>setfirstname(e.target.value)} value={firstName}/>
+             <label htmlFor="" className='a2'>LastName</label>
+             <input type="text" className='in1'onChange={(e)=>setlastname(e.target.value)} value={lastName} />
+              <label htmlFor="" className='a2'>Email</label>
+              <input type="text"  className='in1'  onChange={(e)=>setemail(e.target.value)} value={email}/>
+              <label htmlFor="">PhoneNumber</label>
+                <input type="text"className='in1' onChange={(e)=>setphonenumber(e.target.value)} value={phoneNumber}/>
+                <label htmlFor="" className='a2'>Password</label>
+               <input type="text" name="" id=""  className='in1' onChange={(e)=>setpassword(e.target.value)} value={password}/>
 
              <div className="buttom">
                 <div className="radio">

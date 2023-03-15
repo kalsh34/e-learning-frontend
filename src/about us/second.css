@@ -5,9 +5,10 @@
     
     width: 431px;
     height: 477px;
-    left: -4px;
-    top: calc(50% - 477px/2 - 38px);
-
+    /* left: -4px;
+    top: calc(50% - 477px/2 - 38px); */
+    margin-bottom: 5rem; 
+    margin-left: 4rem;
 }
 .paragraph123{
     width: 747px;

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import './detail.css';
 
 
- const Detail = () => {
+ const Detail = ({card}) => {
     const [activea, setActivea] = useState(false);
     const handleClicka = () => {
       setActivea(!activea);
@@ -56,33 +56,18 @@ import './detail.css';
           </div> 
           <div>
           <div className="detail34">
+          
               <h4 className="h3412">Description:</h4>
              <p className="de34">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-             
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer
-               took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popul.33333333333
+              {card?.description}
               
-              arsed in the 1960 with release containing Lorem 
-              Ipsum passages desktop publishing software.
               
-              <h4 className="h34123">Curriculum:</h4>
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
              
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer
-               took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem 
-              Ipsum passages desktop publishing software.</p>
-
+              </p>
+              <h4 className="h3412">Curriculum:</h4>
+                 <p className='de34'>
+                 {card?.curriculum}
+                 </p>
                  </div>
           </div>
           </div>

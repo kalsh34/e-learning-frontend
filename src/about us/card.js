@@ -1,6 +1,23 @@
 import './card.css'
 import Image21 from './author.png';
+import { useEffect, useState } from 'react';
+
 const Card = () => {
+  const [about, setabout] = useState();
+  useEffect(() => {
+    const fetchinstractor=async()=>{
+      try{
+        const response=await fetch('/instractors')
+        const json=await response.json()
+        if(response.ok){
+          setabout(json)
+        }
+      }catch(error){
+        console.error(error)
+      }
+    }
+    fetchinstractor()
+  }, []);
     return ( 
 
 <div className="frame123">
@@ -9,69 +26,16 @@ const Card = () => {
     <h2 className='h22'>Our Skilled&nbsp;<span className='rashi3'>Instructors</span> </h2>
   </div> 
   <div className='list123'>
-  <div className="card123">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>  
-  <div className="card1234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>   
-  <div className="card2234">
-    
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>   
-  <div className="card3234">
-    <img src={Image21} />
- <p className='p44'>4.3 rating</p> 
-    <p className='ak'>Margarita James</p>
-      <p className='p66'>MSC, Instructor</p>
-  </div> 
- 
-   <div className="card4234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>   
-  <div className="card5234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>  
-   <div className="card6234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>  
-   <div className="card7234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>  
-   <div className="card8234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div> 
-  <div className="card9234">
-    <img src={Image21} />
-    <p className='p44'>4.3 rating</p>
-    <p className='ak'>Margarita James</p>
-    <p className='p66'>MSC, Instructor</p>
-  </div>
-  
+   {
+    about && about.map((item)=>(
+      <div className="card123">
+    <img src={item.image} alt="Avat34" class="Avat34"></img>
+      <p className='ak'>{item.firstName}</p>
+      <p className='p66'>{item.educationStatus}</p>
+    </div> 
+    ))
+   }  
+
 </div>
 </div>
      );

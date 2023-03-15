@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import data from'./card-data';
-import './tutorial.css'
+import './tutorial.css';
 import Videos from './videos';
 import Detail from '../kal course detail/detaill';
 import Lvideos from './listvideos';
@@ -8,11 +8,11 @@ import { useParams } from 'react-router-dom';
 import Courses from '../courses';
 import axios from 'axios';
 
-
 const Page = ({current,dada,didi,setdada}) => {
-  const [card, setcard] = useState(null);
+const [card, setcard] = useState(null);
 const [vidoe, setvidoe] = useState(null);
 const [vid, setvid] = useState(null);
+
 const{id}=useParams()  
     useEffect(() => {
         const fetchcard=async()=>{
@@ -60,7 +60,7 @@ const{id}=useParams()
         
        </div> 
         
-       <Detail/>
+       <Detail card={card}/>
 
        </div>
        
