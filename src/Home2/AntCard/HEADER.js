@@ -21,9 +21,9 @@ const HEADER = () => {
       >Welcome back <bdo className="bdo">{user.firstName},</bdo> ready or your next lesson? </h1>
 
     <div className='VVAll'>
-      <button className='vvbtn1'>
+      {/* <button className='vvbtn1'>
         <p>View Watch History</p>
-      </button>
+      </button> */}
       <div className='buttonAB'>
         {/* arrow */}
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">

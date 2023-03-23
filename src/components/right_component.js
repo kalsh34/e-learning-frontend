@@ -24,7 +24,7 @@ const Right = () => {
     </button></NavLink>
    
        
-    <div className="listall">
+    <div className="listall">0
     <div className="list1">
         
                 <h6><Check className="ch"/> Exprienced Instructors</h6>

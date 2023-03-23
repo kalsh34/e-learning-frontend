@@ -9,6 +9,10 @@ const Card = ({data = null}) => {
     }catch(error){
       console.log(error)
     }
+    const isLogedIn =   localStorage.getItem("isLogedIn") === "true" ? false : true;
+    if(isLogedIn){
+      navigate('/sign_in')
+    }
   }
 
   const navigate=useNavigate()

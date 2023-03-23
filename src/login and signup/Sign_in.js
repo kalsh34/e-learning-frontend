@@ -12,28 +12,35 @@ const{state,dispatch}=useWorkoutContext()
   const [email,setEmail]=useState('')
   const [password,setPassord]=useState('')
   const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false);
+ const [error, setError] = useState(null);
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError(null);
 
-  const handleLogin = async (e)=>{
-    e.preventDefault()
-   
-     const log = await axios.post('/auth/login',{email,password})
-     const {data} = log;
-     console.log(data.user.role);
-     if(data.user.role === 'admin'){
-      navigate('/dashbord')
-     }else{
-      localStorage.setItem("user",data.user)
-     localStorage.setItem("isLogedIn","true")
-      // dispatch({isLogied:true)
-       navigate('/home2')
-      
-     }
+    try {
+      const log = await axios.post('/auth/login', { email, password });
+      const { data } = log;
+      console.log(data.user.role);
+      if (data.user.role === 'admin') {
+        navigate('/dashboard');
+      } else {
+        localStorage.setItem('user', data.user);
+        localStorage.setItem('isLogedIn', 'true');
+        // dispatch({isLogied:true)
+        navigate('/home2');
+      }
+    } catch (error) {
+      setError(error.message);
+    }
 
+    setIsLoading(false);
+  };
 
-     console.log(email,password)
-      
-     
-  }
+  const isFormValid = () => {
+    return email.trim() !== '' && password.trim() !== '';
+  };
     return ( 
         <div className="contianer_signup">
           <h1 className='a0'>Sign In</h1>
@@ -46,7 +53,7 @@ const{state,dispatch}=useWorkoutContext()
             <input className='in1' type="text" name="" id="" placeholder='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
              <p className='a2'>Password</p>
              <input className='in1' type="password" name="" id="" placeholder='Password' value={password} onChange={(e)=>setPassord(e.target.value)} />
-
+              
              <div className="buttom">
                 <div className="radio">
                 <label class="switch">
@@ -60,7 +67,14 @@ const{state,dispatch}=useWorkoutContext()
              </div>
             
           </div>
-         <button className='btn46' onClick={(e)=>handleLogin(e)}> Sign in</button>
+          <button
+        className="btn46"
+        onClick={handleLogin}
+        disabled={!isFormValid() || isLoading}
+      >
+        {isLoading ? 'Loading...' : 'Sign in'}
+      </button>
+     
           <div className="sign_uplink">
             <p>Don't have an account?</p>
             <NavLink to= {'/sign'} className="underlinehide">

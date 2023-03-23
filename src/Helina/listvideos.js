@@ -8,7 +8,8 @@ const Lvideos = ({didi,items,vid,setdada,index}) => {
        
       
         <div onClick={sett}  className="v1" key={index}>
-    <p className='p'>{items.title}</p>
+
+
     </div>
     
      );

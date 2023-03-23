@@ -5,6 +5,8 @@ import Image3 from './Image1.png'
  import Image6 from './degree.png'
  import './About.css'
  import Image8 from './grad.png'
+import { NavLink } from 'react-router-dom';
+ 
 const Second = () => {
     return ( 
       
@@ -19,13 +21,20 @@ const Second = () => {
     
     </div>
   <div className='paragraph123'>
-  <p className='paragraph123'> Lorem Ipsum has been the industr’s standard dummy text ever since unknown printer took galley type and scmbled make type specimen book. It has survived not only five centuries.standard dummy text ever since unknown printer took galley type and scmbled make type specimen book. It has surv </p>
+  <p className='paragraph123'> Using our e-learning website get access
+to high-quality educational resources. It offers a variety of courses,
+lectures, and tutorials in a wide range of disciplines including languages, science,
+technology, business, math, engineering and much more. </p>
   </div>
   
     <h2 className='brightfe'>
     You can join now <span>and upgrade your skill for</span><span> your&nbsp; <span className='rashi3'>bright future</span></span>
     </h2>
+    
+    <NavLink to={'/sign_in'} activeClassName="active">
     <button className='btn1123'><span className='start123'>Start A course</span> </button>
+
+    </NavLink>
  </div>  
  <h1 className='proud123'>we are &nbsp; <span className='rashi3'>proud</span> </h1>
 <p className='abs'>You don't have to struggle alone, you've got our assistance and help.</p>

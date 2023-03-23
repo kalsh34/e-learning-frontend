@@ -100,7 +100,7 @@ import './detail.css';
                 <p className='secint34'>Yes </p>
                 </div>
                 
-                    <button className='en34'>Enrol now</button>
+                    {/* <button className='en34'>Enrol now</button> */}
                     
                 
           </div> 
