@@ -8,12 +8,12 @@ import { useParams } from 'react-router-dom';
 import Courses from '../courses';
 import axios from 'axios';
 import { click } from '@testing-library/user-event/dist/click';
-
+import Vidcontent from './videocontent';
 const Page = ({current,dada,didi,setdada}) => {
 const [card, setcard] = useState(null);
 const [vidoe, setvidoe] = useState(null);
 const [vid, setvid] = useState(null);
-const [curnt, setcurnt] = useState();
+const [curnt, setcurnt] = useState(null);
 const{id}=useParams()  
     useEffect(() => {
 
@@ -24,7 +24,7 @@ const{id}=useParams()
           setvidoe(response2.data.filter(v=>v.course._id == id)[0].video);
           setvid(response2.data.filter(v=>v.course._id == id));
           console.log("dfghmfgdfdgfgm");
-          console.log(response2.data.filter(v=>v.course._id == id));
+          setcurnt(response2.data.filter(v=>v.course._id == id)[0]);
           console.log(response2.data.filter(v=>v.course._id == id)[0].video);
           // console.log(response2.data);
           const data=response.data
@@ -49,9 +49,12 @@ const{id}=useParams()
   // const [select, setselect] = useState(
 
   // );
-
-
-
+  const [loop, setloop] = useState();
+  const handlecliker=(vido)=>{
+    const selectvideo=vid.filter((state)=>state._id===vido)
+    setvidoe(selectvideo[0].video)
+  }
+ 
     return (  
        <div className='tut1'>
        <div className="cont1">
@@ -60,72 +63,31 @@ const{id}=useParams()
         <p className='p2'>Lorem ipsum dolor sit amet consectetur.</p>
        
         <Videos dada={{...dada,v1:"http://192.168.0.130:5000/"+vidoe}} current={current}/>
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
        </div>
-     
        <div className="cont2">
-        <div className="h33">
-        <h3 className='h3'>Course contents</h3>
-         
+       <div className="h33">
+       <h3 className='h3'>Course contents</h3>
         
-   
-      {
-        vid && vid.map(it=>(
-          <ul key={it.id} className='vid34'>
-   <li> <a href="" className='vid1234' onClick={click}>{it.videoName}</a> </li>
-             </ul>
-        ))
-      }
-   
-        </div>
+       {
+     vid && vid.map((it)=>(
+      <ul className='vid34'>
+      <li   className='vid1234' onClick={()=>handlecliker(it._id)} > {it.videoName} </li>
+                </ul>
         
-       </div> 
+     ))
+     
+     
+    
+     }
+       
+ 
+     
+  
+       </div>
+       
+      </div>
         
        <Detail card={card}/>
 
