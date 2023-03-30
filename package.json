@@ -1,6 +1,6 @@
 {
   "name": "kal1",
-  "proxy":"http://192.168.0.130:5000",
+  "proxy":"https://node-2nd-project.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
