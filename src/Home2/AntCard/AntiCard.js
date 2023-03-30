@@ -29,7 +29,7 @@ const Card = () => {
     const navigate=useNavigate()
   const handleclick=async(id)=>{
     try{
-      const response= await axios.get(`courses/${id}`)
+      const response= await axios.get(`/courses/${id}`)
       navigate(`/page/${id}`)
     }catch(error){
       console.log(error)

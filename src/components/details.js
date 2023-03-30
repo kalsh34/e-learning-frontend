@@ -13,7 +13,7 @@ const Details = () => {
 
   useEffect(() => {
     async function fetchCourses() {
-      const response = await axios.get('/courses');
+      const response = await axios.get('http://192.168.0.130:5000/courses');
       const coursesData = response.data;
       setCourses(coursesData);
     }
@@ -22,7 +22,7 @@ const Details = () => {
 
   useEffect(() => {
     async function fetchWorkout() {
-      const response = await axios.get('/category');
+      const response = await axios.get('http://192.168.0.130:5000/category');
       const workoutData = response.data;
       setWorkout(workoutData);
     }

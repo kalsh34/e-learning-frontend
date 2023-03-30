@@ -7,12 +7,25 @@ left: 0px;
 top: 118.6rem;
 background: #2D4849;
 }
+.footer12{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F9F8F3;
+    margin-top: -1rem;
+    width: 25rem;
+    text-decoration: none;
+}
 .fotterH_all{
 display: flex;
 justify-content: space-evenly;
 margin-top: 2rem;
 }
-
+.link{
+    cursor: pointer;
+}
 .fotter1H p{
     font-family: 'Poppins';
     font-style: normal;

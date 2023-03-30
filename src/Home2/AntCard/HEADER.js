@@ -9,6 +9,7 @@ const HEADER = () => {
     async  function fetchdata() {
         const response=await axios.get('/users/showCurrentUser')
         const course=response.data
+        console.log('========================================');
         console.log(course)
         setUser(course.user)
         

@@ -1,18 +1,29 @@
 import Logo1 from'./logo.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Fotter = () => {
+   const navigate=useNavigate()
+   const handlnav=()=>{
+      navigate('/about')
+   }
+   const handlnv=()=>{
+      navigate('/contact')
+   }
     return ( 
         <div className="fotterH_all">
          <div className="fotter1H">
            <img className='logofH' src={Logo1} alt="" />
-           <p>Lorem ipsum dolor sit amet consectetur. Risus sem <br /> mi laoreet aliquet lectus a nec varius. Sit amet amet <br /> pellentesque a ipsum a sit mi. Fermentum iaculis <br /> maecenas a aenean. </p>
+           <p className='footer12'>our e-learning website in Ethiopia is a comprehensive
+platform dedicated to providing students and professionals with access
+to high-quality educational resources. It offers a variety of courses,
+lectures, and tutorials in a wide range of disciplines including languages, science,
+technology, business, math, engineering and much more.</p>
 
          </div>
          <div className="fotter2H">
           <h1>Company</h1>
           <p>Home</p>
-         <Link to={'/about'}><p>About us</p></Link> 
-          <Link to={'/contact'}><p>Contact Us</p></Link>
+         <p className='link' onClick={handlnav}>About us</p>
+          <p className='link' onClick={handlnv}>Contact Us</p>
           <p>instructor</p>
          </div>
          <div className="fotter3H">

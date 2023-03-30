@@ -1,11 +1,13 @@
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({data = null}) => {
   const handleclick=async(id)=>{
     try{
-      const response= await axios.get(`courses/${id}`)
+      const response= await axios.get(`/courses/${id}`)
       navigate(`/page/${id}`)
+      console.log('photo');
+      console.log(response);
     }catch(error){
       console.log(error)
     }

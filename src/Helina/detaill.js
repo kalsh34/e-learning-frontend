@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import './detail.css';
 
 
- const Detail = ({card}) => {
+ const Detail = ({card,loop,instractors}) => {
     const [activea, setActivea] = useState(false);
     const handleClicka = () => {
       setActivea(!activea);
@@ -42,10 +42,10 @@ import './detail.css';
         style={{ backgroundColor: activea ? "#FDB137" : "white" }} className='h534'>Description</button>
             
             
-            <Link to={'/cardreview'}>
+{/*            
             <button onClick={handleClickb}
         style={{ backgroundColor: activeb ? "#FDB137" : "white" }} className='h535'>Instructors</button>
-        </Link>
+         */}
                {/* <Link to={'/sign_in'}>
                     <button className="btn" >Sign In</button>
                     </Link> */}
@@ -76,12 +76,12 @@ import './detail.css';
                 <h3 className="code34">course detail</h3>
             
                 <div className='instruct341'>
-                <p className='firint34'>Instructor</p>
-                <p className='secint34'> Pamela Foster</p>
+                <p className='firint34'>Category</p>
+                <p className='secint34'> {instractors.category?.name} </p>
             </div>
                 <div className='instruct342'>
                 <p className='firint34'>Duration</p>
-                <p className='secint34'> 08 hr 15 mins</p>
+                <p className='secint34'> {loop} mins</p>
             </div>
                 <div className='instruct343'>
                 <p className='firint34'>Lectures</p>
@@ -89,7 +89,7 @@ import './detail.css';
                 </div>
                 <div className='instruct344'>
                 <p className='firint34'>Level</p>
-                <p className='secint34'> Secondary</p>
+                <p className='secint34'> {instractors?.level}</p>
                 </div>
                 <div className='instruct345'>
                 <p className='firint34'>Language</p>

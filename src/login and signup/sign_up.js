@@ -171,7 +171,7 @@ const Sign_up = () => {
 <p className='a3'>Remember me</p>
 
                 </div>
-                <p className='forgot'>Forgot Password?</p>
+                {/* <p className='forgot'>Forgot Password?</p> */}
              </div>
           <button className='btn44' type='submit'>Create my Account</button>
        

@@ -31,7 +31,7 @@ technology, business, math, engineering and much more. </p>
     You can join now <span>and upgrade your skill for</span><span> your&nbsp; <span className='rashi3'>bright future</span></span>
     </h2>
     
-    <NavLink to={'/sign_in'} activeClassName="active">
+    <NavLink to={'/sign_in'} className="active">
     <button className='btn1123'><span className='start123'>Start A course</span> </button>
 
     </NavLink>
@@ -72,8 +72,8 @@ technology, business, math, engineering and much more. </p>
             <h2 className='h4123'>Tools for  &nbsp;<spam className="rashi3"> Teachers</spam></h2>
              <h2 className='h8123t'> And Learners</h2>
              </div>
-            <p className='p5123'>Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived.Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived.</p>
-          <button className='btn1123' type="">Join now</button>
+            <p className='p5123'>As a provider of tools for teachers and learners, we are dedicated to offering a comprehensive and effective platform that meets the needs of all users. Our goal is to provide user-friendly interfaces and resources that enable teachers to create engaging and effective lesson plans, generate assessments, and provide feedback to their students.</p>
+          <button className='btn1123' type=""><span className='start1234'>Join Now</span></button>
          </div>  
       <div className='con13123'>
 

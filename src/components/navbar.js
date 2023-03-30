@@ -51,7 +51,7 @@ if(isLogedIn){
                 
             
                 <img src={Profile} alt="Avatar" className='avatar' />
-                <button   className='btn41' type="" onClick={logout}>Logout</button>
+                <button style={{'color':'red'}}   className='btn' type="" onClick={logout}>Logout</button>
               </div>
                
   ]
@@ -96,19 +96,7 @@ if(isLogedIn){
         navRef.current.classList.toggle("responsive_nav");
 
     }
-    
-    // const [activeb, setActiveb] = useState(false);
-    // const handleClickb = () => {
-    //   setActiveb(!activeb);
-     
-    //   setActive(false);
-    // };
-    // const [active, setActive] = useState(false);
-    // const handleClick = () => {
-    //   setActive(!active);
-    //   setActiveb(false);
-    // };
-    
+
    
   return (
         <div className="navbar">
@@ -116,43 +104,7 @@ if(isLogedIn){
                 <Logo />
                 {pathname != "/allcourses" &&  <Details/>}
          
-                {/* <h3 onClick={(e) => e.preventDefault()}>| <HiChevronDoubleDown/> Category</h3> */}
-     {/* <Dropdown
-    menu={{
-      items,
-      
-    }}
-  >
-    <a onClick={(e) => e.preventDefault()}>
-      <Space className="antcat">
-       Category
-        <DownOutlined />
-      </Space>
-    </a>
-  </Dropdown> */}
-      
-                {/* {
-                  localStorages?(
-                    <div className="profile">
-                    <h2>My Class</h2>
-                   <BsBell/>
-                    <img src={Profile} alt="Avatar" className='avatar' />
-                  </div>
-                  ):(
-                  
-    <div className="button">
-    <Link to={'/sign'}>
-<button className="btn" >  Sign Up</button>
-
-</Link>
-<Link to={'/sign_in'}>
-<button className="btn" >Sign In</button>
-
-</Link>     
-
-</div>
-                  )
-                } */}
+       
              {list()}
               
             </header>

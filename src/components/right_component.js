@@ -2,8 +2,12 @@ import { ReactComponent as Image } from "../svg/image.svg";
 import { ReactComponent as Check } from "../svg/check.svg";
 import './img.css';
 import Img1 from'./hero-right.png';
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Right = () => {
+   const navigate = useNavigate()
+    const handlenav=()=>{
+        navigate('/sign')
+    }
     return ( <div className="right">
         <div className="para">
     <p>Find The Best Platform</p>
@@ -11,20 +15,20 @@ const Right = () => {
     <p className="color">Learn</p>
     <h5>
         our e-learning website in Ethiopia is 
-        a comprehensive <br/> platform  dedicated to providing students   
-        and professionals with access <br/> to high-quality 
-        educational resources. It offers a variety of courses,<br/> 
+        a comprehensive  platform  dedicated to providing students   
+        and professionals with access to high-quality 
+        educational resources. It offers a variety of courses,
         lectures, and tutorials in a wide range of disciplines 
-        including languages, science,<br/> technology, business, 
+        including languages, science, technology, business, 
         math, engineering and much more.
     </h5>
     {/* <NavLink to={'/sign'}'> */}
-    <NavLink to={'/sign_in'} activeClassName="active"> <button>
+    <button className="act" onClick={handlenav}>
         <h4>Get Started</h4>
-    </button></NavLink>
+    </button>
    
        
-    <div className="listall">0
+    <div className="listall">
     <div className="list1">
         
                 <h6><Check className="ch"/> Exprienced Instructors</h6>
