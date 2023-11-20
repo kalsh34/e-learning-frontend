@@ -16,8 +16,8 @@ const Card_container = ({selectedCat = ""}) => {
   const [allCourseData,setAllCourseData] = useState([]);
   useEffect(() => {
     async function fetchWorkout() {
-      const response = await axios.get('/category');
-      const response2 = await axios.get('/courses');
+      const response = await axios.get('http://192.168.0.130:5000/category');
+      const response2 = await axios.get('http://192.168.0.130:5000/courses');
       const workoutData = response.data;
       const courseData = response2.data;
       setWorkout(workoutData);
@@ -46,6 +46,8 @@ const Card_container = ({selectedCat = ""}) => {
             {/* {card1} */}
             <div style={{display:"flex",gap:"15px",flexWrap:"wrap"}}>
             {courseData.map((info)=>(<Card data={info} />))}
+           
+
             </div>
           
         </div>

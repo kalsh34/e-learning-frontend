@@ -81,6 +81,25 @@ header .btn {
     border: none;
 
 }
+header .btn12231 {
+    width: 118px;
+    height: 47px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.025em;
+    color: #2D4849;
+    border-radius: 50px;
+    border: none;
+    /* padding: 1rem; */
+    margin-right: 1rem;
+}
+
 
 header .btn:hover {
     background-color: #FDB137;

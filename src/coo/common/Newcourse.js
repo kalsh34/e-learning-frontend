@@ -118,6 +118,8 @@ const Newcourse= () => {
             backgroundColor:'white',
           }}
         >
+
+          ` `
             <div style={{
             margin:22,
             

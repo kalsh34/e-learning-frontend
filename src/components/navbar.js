@@ -20,11 +20,13 @@ import{BsBell} from'react-icons/bs';
 import Profile from'../user/profile.png';
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
+import watched from "./watched";
 const Navbar = () => {
   const navigate=useNavigate()
 const logout=()=>{
   localStorage.setItem("isLogedIn","false")
   navigate('/')
+  localStorage.clear()
  
 }
 const {state,dispatch}=useWorkoutContext()
@@ -49,7 +51,10 @@ if(isLogedIn){
 </nav> ,
     <div className="">
                 
-            
+                <NavLink to="/watched" exact>
+                <button style={{'color':'black'}}   className='btn12231' type="" >Watched Video</button>
+
+      </NavLink>
                 <img src={Profile} alt="Avatar" className='avatar' />
                 <button style={{'color':'red'}}   className='btn' type="" onClick={logout}>Logout</button>
               </div>

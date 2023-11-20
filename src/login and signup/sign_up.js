@@ -13,7 +13,7 @@ const Sign_up = () => {
   const [phoneNumber, setphonenumber] = useState("");
   const [password, setpassword] = useState("");
   const [error, seterror] = useState(null);
-
+  const [isLoading, setIsLoading] = useState(false);
   const validateForm = () => {
     let isValid = true;
     const errors = {};
@@ -82,7 +82,7 @@ const Sign_up = () => {
     }
 
     const signup = { firstName, lastName, email, phoneNumber, password };
-    const response = await fetch("/auth/register", {
+    const response = await fetch("http://192.168.0.130:5000/auth/register", {
       method: "Post",
       body: JSON.stringify(signup),
       headers: {
@@ -95,7 +95,9 @@ const Sign_up = () => {
       seterror(json.error);
     }
     if (response.ok) {
-      navigate("/sign_in");
+      // console.log(json.token);
+       navigate("/sign_in");
+      
       alert("succesfull");
     }
   };

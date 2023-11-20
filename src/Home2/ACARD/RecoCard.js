@@ -23,7 +23,7 @@ const AntiCard = () => {
 const navigate=useNavigate()
   const handleclick=async(id)=>{
     try{
-      const response= await axios.get(`/courses/${id}`)
+      const response= await axios.get(`http://192.168.0.130:5000/courses/${id}`)
       navigate(`/page/${id}`)
     }catch(error){
       console.log(error)
@@ -32,7 +32,7 @@ const navigate=useNavigate()
     const [course, setcourse] = useState([]);
     useEffect(() => {
     async  function fetchdata() {
-        const response=await axios.get('/courses')
+        const response=await axios.get('http://192.168.0.130:5000/courses')
         const course=response.data
         console.log(course)
         setcourse(course)
@@ -58,7 +58,7 @@ const navigate=useNavigate()
         <SwiperSlide className='AntiSlide'>
         <div className='Anti_content'onClick={()=>handleclick(imou._id)}>
             <div className='AntiImg'>
-                <img src={imou.image}  alt='' className='Imini'/>
+                <img src={"http://192.168.0.130:5000"+imou.image}  alt='' className='Imini'/>
             </div>
                 <h1 className='titles'>{imou.courseName}</h1>
                 <h1 className='descriptions'>{imou.description.slice(0,60)} </h1>

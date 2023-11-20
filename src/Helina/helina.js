@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Helina = ({acounting,card1,workout=[],helinaHandler}) => {
     // const [workout,setWorkout] = useState([])
 
-    // useEffect(() => {
+    // useEffect(() => { 
     //     async function fetchWorkout() {
     //       const response = await axios.get('/category');
     //       const response2 = await axios.get('/cources');
@@ -20,6 +20,8 @@ const Helina = ({acounting,card1,workout=[],helinaHandler}) => {
     //     fetchWorkout();
     //   }, []);
     
+    
+
     const helinaRef = useRef();
     const showNavbar = () => {
         helinaRef.current.classList.toggle("responsive_helina");
@@ -38,6 +40,18 @@ const Helina = ({acounting,card1,workout=[],helinaHandler}) => {
     return ( 
         <div className="helina">
         <div className="">
+
+
+
+
+
+
+
+
+
+
+
+            
         </div>
         <div className="helina_contianer">
             <div className="helina_nav">
@@ -46,7 +60,7 @@ const Helina = ({acounting,card1,workout=[],helinaHandler}) => {
         <a href="javascript:void(0)" onClick={()=>helinaHandler("")}>All Catagories</a>
         {/* <Link onClick={acounting}>Accounting</Link> */}
         {
-         workout.map(c=> <a onClick={()=>helinaHandler(c.name)} href="javascript:void(0)">{c.name}</a>)
+         workout.map(c=> <a onClick={()=>helinaHandler(c.name)}           href="javascript:void(0)">{c.name}</a>)
         }
         {/* <a href="">Business</a>
         <a href="">Design</a>

@@ -5,17 +5,32 @@ import { useState } from 'react';
 
 const HEADER = () => {
   const [user, setUser] = useState([]);
-    useEffect(() => {
-    async  function fetchdata() {
-        const response=await axios.get('/users/showCurrentUser')
-        const course=response.data
-        console.log('========================================');
-        console.log(course)
-        setUser(course.user)
+  const [name, setname] = useState();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get(
+          'http://192.168.0.130:5000/users/showCurrentUser',
+          {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+            },
+          }
+        );
+  
         
-      }fetchdata()
-
-    }, []);
+        const course = response.data;
+        console.log('========================================');
+        console.log(course);
+        setUser(course.user);
+      } catch (error) {
+        console.log('Error:', error);
+      }
+    }
+  
+    fetchData();
+  }, []);
+  
   return (
     <div className='hehe'>
       <h1 className="our" key={user.userId}

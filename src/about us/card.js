@@ -7,7 +7,7 @@ const Card = () => {
   useEffect(() => {
     const fetchinstractor=async()=>{
       try{
-        const response=await fetch('/instractors')
+        const response=await fetch('http://192.168.0.130:5000/instractors')
         const json=await response.json()
         if(response.ok){
           setabout(json)
@@ -29,7 +29,7 @@ const Card = () => {
    {
     about && about.map((item)=>(
       <div className="card123">
-    <img src={item.image} alt="Avat34" class="Avat34"></img>
+    <img src={"http://192.168.0.130:5000"+item.image} alt="Avat34" class="Avat34"></img>
       <p className='ak'>{item.firstName}</p>
       <p className='p66'>{item.educationStatus}</p>
     </div> 

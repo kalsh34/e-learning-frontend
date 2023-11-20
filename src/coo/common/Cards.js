@@ -29,6 +29,9 @@ const data = [
   },
   {
     avatar:<Avatar>M</Avatar>,
+
+
+    
     title: 'Mathematics',
     description:'50+ courses',
   

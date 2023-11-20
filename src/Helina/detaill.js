@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 
 
 import './detail.css';
-
+    
 
  const Detail = ({card,loop,instractors}) => {
     const [activea, setActivea] = useState(false);
     const handleClicka = () => {
       setActivea(!activea);
       setActiveb(false);
+
       setActive(false);
       
     };

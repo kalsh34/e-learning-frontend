@@ -1,7 +1,4 @@
-
-
 import'./styles/navbar.css';
-
 import'./styles/Container.css';
 import'./styles/right.css';
 import'./styles/header2.css';
@@ -12,6 +9,7 @@ import Header from './components/Header';
 import Containers from './components/container';
 import Helina from './Helina/helina';
 import'./Helina/helina.css';
+
 import { useState } from 'react';
 import AppContact from './contact us/App';
 
@@ -53,6 +51,7 @@ import ManageStudent from './coo/common/ManageStudent';
 import Setting from './coo/common/Setting';
 import { useWorkoutContext } from './hooks/useworkoutcontext';
 import Test from './Helina/test';
+import Watched from './components/watched'
 function App() {
   const navigate=useNavigate()
   const{state,dipatch}=useWorkoutContext()
@@ -63,7 +62,7 @@ useEffect(() => {
    navigate('/home2')
   }
   else{
-    navigate('/')
+    navigate('./coo/common/Dashbordcourse')
   }
 }, []);
   const [info, setinfo] = useState(data());
@@ -103,7 +102,7 @@ const [dada, setdada] = useState(didi[0]);
 </Route>
 <Route path='/setting' element={<Setting/>}>
 </Route>
-{/* <Route path='/contact' element={<Contact/>}></Route> */}
+<Route path='/watched' element={<Watched/>}></Route>
 <Route path='/about' element={<Appabout/>}></Route>
 <Route path='/allcourses' element={<All_course_container/>}></Route>
 <Route path='/home2' element={<Appo/>}></Route>

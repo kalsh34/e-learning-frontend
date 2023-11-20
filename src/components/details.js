@@ -1,4 +1,3 @@
-
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import{useWorkoutContext}from'../hooks/useworkoutcontext';
 import { useEffect } from 'react';
@@ -10,7 +9,7 @@ const Details = () => {
   const [workout, setWorkout] = useState(null); // Change to an object instead of an array
   const [courses, setCourses] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([]);
-
+  
   useEffect(() => {
     async function fetchCourses() {
       const response = await axios.get('http://192.168.0.130:5000/courses');
@@ -28,6 +27,7 @@ const Details = () => {
     }
     fetchWorkout();
   }, []);
+  
 
   const handleSelection = (id) => {
     const selected = courses.find((course) => course.id === id);
@@ -35,14 +35,17 @@ const Details = () => {
     console.log(selected);
   };
 const navigate = useNavigate();
-    return (  
+
+
+
+return (  
         <div>
           
                   
              
           <select onChange={(e)=>navigate('/allcourses', { state: { cat: e.target.selectedOptions[0].value } })}>
             
-             <option value="">Catagories</option>
+            <option value="">Catagories</option>
              <option value=""> all Courses</option>
           {workout && workout.map((item) => ( 
         <option key={item.id} value={item.name} >
@@ -50,13 +53,6 @@ const navigate = useNavigate();
           {item.name}
         </option>))}
         </select> 
-      
-    
-             
-      
-   
-   
-
        {/* <h2>{selectedCourse.courseName}</h2> */}
 
    {/* {

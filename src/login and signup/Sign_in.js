@@ -20,13 +20,15 @@ const{state,dispatch}=useWorkoutContext()
     setError(null);
 
     try {
-      const log = await axios.post('/auth/login', { email, password });
-      const { data } = log;
+      const log = await axios.post('http://192.168.0.130:5000/auth/login', { email, password });
+      const { data } = log
+      console.log(data)
       console.log(data.user.role);
       if (data.user.role === 'admin') {
-        navigate('/dashboard');
+        navigate('/dashbord');
       } else {
-        localStorage.setItem('user', data.user);
+        localStorage.setItem('jwt', data.token);
+        localStorage.setItem('user',JSON.stringify( data.user))
         localStorage.setItem('isLogedIn', 'true');
         // dispatch({isLogied:true)
         navigate('/home2');

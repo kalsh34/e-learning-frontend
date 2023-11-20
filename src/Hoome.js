@@ -15,7 +15,6 @@ import data from'./Helina/card-data';
 import Card from './Helina/helina_card';
 import './Helina/card.css'
 import Card_container from './Helina/card_container';
-
 import HD from './Helina/helina_header';
 import'./Beka/beka_data.css';
 import Beka_conatiner from './Beka/beka_container';
@@ -31,6 +30,14 @@ const Homee = ({acounting,card1,setcurrent}) => {
             await axios.get("/auth/logout")
         })()
     }, []);
+    const ScrollableContainer = ({ children }) => {
+        return (
+          <div style={{ overflowY: "scroll", maxHeight: "680px" }}>
+            {children}
+          </div>
+        );
+      };
+       
     const [info, setinfo] = useState(data());
  
     return ( 
@@ -38,8 +45,10 @@ const Homee = ({acounting,card1,setcurrent}) => {
 <Containers/>
 <Information/>
 <HD/>
+<ScrollableContainer>
 <Card_container acounting={acounting} card1={card1} setcurrent={setcurrent} info={info} />
-<Beka_conatiner/>
+</ScrollableContainer>
+ <Beka_conatiner/>
 
 <Fotter_Container/>
 

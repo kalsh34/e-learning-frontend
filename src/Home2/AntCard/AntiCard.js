@@ -1,35 +1,24 @@
 import React from 'react';
 import Imgg from '../assets/web.png';
-// import Video from '../../assets/v v.mp4';
+// import Video from '../../assets/v v.mp4';+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
 import SwiperCore, { Pagination, Scrollbar, A11y } from 'swiper';
-
 import { Navigation } from 'swiper';
 import 'swiper/css/navigation';
-
-// import {HiOutlineArrowNarrowRight, HiOutlineArrowNarrowLeft} from 'react-icons/hi';
-
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io';
-//import { HiPlay } from 'react-icons/hi';
-
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';      
 import { useState,useEffect } from 'react';
 SwiperCore.use([
     Navigation, Pagination, Scrollbar, A11y]);
-
-
-
-
 const Card = () => {
     const navigate=useNavigate()
   const handleclick=async(id)=>{
     try{
-      const response= await axios.get(`/courses/${id}`)
+      const response= await axios.get(`http://192.168.0.130:5000/courses/${id}`)
       navigate(`/page/${id}`)
     }catch(error){
       console.log(error)
@@ -37,8 +26,8 @@ const Card = () => {
   }
     const [course, setcourse] = useState([]);
     useEffect(() => {
-    async  function fetchdata() {
-        const response=await axios.get('/courses')
+    async  function fetchdata() {    
+        const response=await axios.get('http://192.168.0.130:5000/courses')
         const course=response.data
         console.log(course)
         setcourse(course)
@@ -71,7 +60,7 @@ const Card = () => {
                     <SwiperSlide key={user.id} className="slide">
                         <div className='slide_content' onClick={()=>handleclick(user._id)}>
                             <div className='image'>
-                                <img src={user.image} alt='' className='photo' />
+                                <img src={"http://192.168.0.130:5000"+user.image} alt='' className='photo' />
                             </div>
 
                             <h1 className='title'>{user.courseName}</h1>

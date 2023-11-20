@@ -2,25 +2,19 @@ import React from 'react';
 import Logo from './logo2.png';
 import { Anchor } from 'antd';
 import { GrHomeRounded } from "react-icons/gr";
- import {RiLiveLine } from "react-icons/ri";
-
-import { MdDashboard,
-  MdClass,
-  MdManageAccounts,
-  MdLiveTv
- } from "react-icons/md";
- import { RiArrowDropDownLine} from "react-icons/ri";
- import { BiWorld } from "react-icons/bi";
- import { AiOutlineTeam  } from "react-icons/ai";
- import { FaChalkboardTeacher,FaDiscourse } from "react-icons/fa";
- import { IoChatbubblesSharp,IoSettingsSharp,IoMdNotificationsOutline} from "react-icons/io5";
+import {RiLiveLine } from "react-icons/ri";
+import { MdDashboard, MdClass,MdManageAccounts, MdLiveTv} from "react-icons/md";
+import { RiArrowDropDownLine} from "react-icons/ri";
+import { BiWorld } from "react-icons/bi";
+import { AiOutlineTeam  } from "react-icons/ai";
+import { FaChalkboardTeacher,FaDiscourse } from "react-icons/fa";
+import { IoChatbubblesSharp,IoSettingsSharp,IoMdNotificationsOutline} from "react-icons/io5";
 import { Layout, Menu, theme } from 'antd';
 import { Input, Space } from 'antd';
 import { Button, message } from 'antd';
 import {MdForwardToInbox} from "react-icons/md";
 import Cards from './Cards';
 import { Col, Row } from 'antd';
-import { Card } from 'antd';
 import { Avatar, List } from 'antd';
 import { IoIosNotificationsOutline} from "react-icons/io";
 import Contents from './Contents';
@@ -28,7 +22,7 @@ import { Link,Route,Routes } from 'react-router-dom';
 import Home from '../home/Home';
 
 import Charts from './Charts';
-const { Meta } = Card;
+// const { Meta } = Card;
 
 const { Header, Content, Footer, Sider } = Layout;
 const Headers = () => {
@@ -109,6 +103,7 @@ const Headers = () => {
           }}
         >
           e-learning ©2023 
+          
         </Footer>
       </Layout> 
     </Layout>
